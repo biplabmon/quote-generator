@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #330033;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.quote-container {
+    width: auto;
+    /* max-width: 900px; */
+    max-width: 56rem;
+    background-color: #520c526c;
+    border-radius: 10px;
+    padding: 20px 30px;
+    -webkit-box-shadow: 11px 9px 20px 4px rgba(82, 51, 82, 0.78);
+    -moz-box-shadow: 11px 9px 20px 4px rgba(82, 51, 82, 0.78);
+    box-shadow: 11px 9px 20px 4px rgba(82, 51, 82, 0.78);
+}
+
+.quote-text {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+.long-text {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.author-text {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height: 3rem;
+    background-color: #0c2445c4;
+    padding: 0.5rem 1.8rem;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 0.2rem #727577;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: translate(0, 0.2rem);
+    box-shadow: 0 0.1rem #485361;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+
+}
+
+.footer{
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.signature{
+    font-weight: 50;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.social-account > a{
+    margin: 7px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Responsive design  */
+
+/* For mobile device  */
+@media screen and (min-width : 320px) and (max-width : 480px){
+    .quote-container{
+        margin: 0 15px;
+        box-shadow: 10px 3px 25px 1px rgb(82 51 82 / 78%);
+    }
+    
+    .quote-text{
+        font-size: 1.5rem;
+    }
+    
+    .long-text{
+        font-size: 1.2rem;
+
+    }
+}
+
+/* For tablet device  */
+@media screen and (min-width : 481px) and (max-width : 768px){
+    .quote-container{
+        margin: 0 30px;
+        box-shadow: 10px 3px 25px 1px rgb(82 51 82 / 78%);
+    }
+}
